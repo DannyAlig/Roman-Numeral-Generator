@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+:root{
+    --userInterfaceColor: linear-gradient(0deg, blue, lightblue);
+    --wholeSiteBackground: linear-gradient(0deg, rgb(65, 9, 9), rgb(150, 41, 41));
+    --defaultTextColor: black;
+    --inputFontSize: 20pt;
+    --romanFontSize: 24pt;
+    --titleFontSize:20pt;
+    --labelFontSize: 14pt;
+    --romanColor: rgb(59, 10, 10);
+
+}
+
+body,html{
+    color: var(--defaultTextColor);
+    background-color:white;
+    font-family: Roboto Condensed;
+}
+
+label{
+    font-size: var(--labelFontSize);
+}
+
+#whole-site-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--wholeSiteBackground);
+}
+
+#portfolio-return{
+    position:absolute;
+    left:1%;
+    top: 1%;
+    color: white;
+}
+
+#user-interface{
+    width: 90vw;
+    max-width: 400px;
+    max-height: 500px;
+    height:80vh;
+    background: var(--userInterfaceColor);
+    border-radius:15px;
+
+}
+
+#title{
+    font-size: var(--titleFontSize);
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+#number-input{
+
+    width:130px;
+    height:40px;
+    margin-bottom: 1vh;
+    font-size: var(--inputFontSize);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#roman-output{
+    text-align:center;
+    min-width:240px;
+    width: 85%;
+    height:50px;
+    font-size: var(--romanFontSize);
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--romanColor);
+}
+
+#error-message{
+    height: 30px;
+    color: red;
+    font-size: 14pt;
+    margin-bottom: 2vh;
+}
+
+#bottom-text{
+    color: white;
+    font-size:10pt;
+    margin-top: auto;
+    margin-bottom: 8px;
+    text-align:center;
+
+}
+
+.column-flex{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items:center;
+}
